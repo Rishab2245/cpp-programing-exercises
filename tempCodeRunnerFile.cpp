@@ -1,4 +1,1 @@
-if (i>=j)
-            {
-                break;
-            }
+count++;
