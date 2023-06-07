@@ -2,14 +2,16 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-bool sum(int a[], int n, int x)
+int sum(int a[], int n, int x)
 {
-    int i = 0, j = n - 1;
+    int i = 0, j = n - 1,count=0;
     while (i < j)
     {
         if (a[i] + a[j] == x)
         {
-            return true;
+            count++;
+            i++;
+            j--;
         }
         else if (a[i] + a[j] < x)
         {
@@ -20,7 +22,7 @@ bool sum(int a[], int n, int x)
             j--;
         }
     }
-    return false;
+    return count;
 }
 int main()
 {
