@@ -7,7 +7,8 @@ void f(int m, int n, int i, int j, int *p)
       // Reached beyond the grid boundaries, terminate recursion
     if (i >= m or j >= n)
     {
-       return;}
+       return;
+       }
     if (i == m - 1 and j == n - 1)
     {
         *p += 1;
